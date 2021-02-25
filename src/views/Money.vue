@@ -1,15 +1,18 @@
 <template>
     <div>
-       money.vue
+       Money.vue
+       <Nav />
     </div>
 </template>
 
 <script lang="ts">
+    import Nav from "../components/Nav.vue"
     import Vue from 'vue'
 
-    export default Vue.extend({
-        
-    })
+    export default {
+        name: 'Money',
+        components: {Nav}   
+    }
 </script>
 
 <style lang="scss" scoped>
